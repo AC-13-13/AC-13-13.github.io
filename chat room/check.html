@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+  <meta charset="UTF-8">
+  <script src="/JavaScript/main_head.js"></script>
+  <script>begin_main_website("聊天室 | 登录")</script>
+  
+  
+</head>
+<body>
+<!--- 输入框 --->
+<br>
+<strong>用户名:</strong>
+<input type="text" id="name" placeholder="请输入用户名">
+<br>
+<strong>密码:</strong>
+<input tyep="password" id="password" placeholder="请输入密码">
+<br>
+<!--- 确认按钮 --->
+ <input type="button" class="button" value="确认" onclick="butt()">
+<!--- 判断是否是聊天室成员 --->
+    <script>
+        function GetInputValue(name) {
+            return document.getElementById(name);
+         }
+        function butt() {
+            document.querySelector(".button").onclick = function() {
+                alert("按钮被点击了");
+	const fs = require('fs');
+  const _name = GetInputVaule("name");
+  const _password = GetInputVaule("password");
+  let name, password;
+  let n;
+
+  fs.readFile('UserIformation/index.txt', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+
+    n = parseInt(data.trim());
+
+    for (let i = 1; i <= n; i++) {
+      [name, password] = data.trim().split('\n')[i].split(' ');
+      if (name === _name && password === _password) {
+        alert("通过:);
+        <meta http-equiv="refresh" content="5;url=room.html">
+      }
+    }
+  });
+            }
+        }
+    </script>
+</body>
+</html>

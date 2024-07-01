@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+  <meta charset="UTF-8">
+  <script src="/JavaScript/main_head.js"></script>
+  <script>begin_main_website("聊天室 | 登录")</script>
+  
+  
+</head>
+<body>
+<br>
+<strong>用户名:</strong>
+<input type="text" id="name" placeholder="请输入用户名">
+<br>
+<strong>密码:</strong>
+<input tyep="password" id="password" placeholder="请输入密码">  
+
+</body>
+</html>
